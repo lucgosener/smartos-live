@@ -81,6 +81,7 @@ JS_CHECK_TARGETS=\
 	vm/sbin/*.js \
 	vm/node_modules/{dladm,expander,proptable,utils,VM,qmp,openonerrlogger}.js \
 	vm/node_modules/vmload/*.js \
+	vm/node_modules/sysevent-stream.js \
 	img/lib/*.js \
 	img/sbin/imgadm \
 	vm/common/nictag.js \
@@ -115,7 +116,10 @@ C_CHECK_TARGETS=\
 	zfs_recv.c \
 	zfs_send.c \
 	zoneevent.c \
-	sysevent.c
+	sysevent.c \
+	dockerinit/src/dockerexec.c \
+	dockerinit/src/dockerinit.c \
+	dockerinit/src/docker-common.c
 
 #
 # Generic flags we apply by default to everything.

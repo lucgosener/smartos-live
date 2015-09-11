@@ -1,4 +1,4 @@
-# imgadm(1m) -- Manage SmartOS virtual machine images
+# imgadm(1M) -- Manage SmartOS virtual machine images
 
 ## SYNOPSIS
 
@@ -354,7 +354,7 @@ UUID.
                            then "PATH.imgmanifest" and "PATH.zfs[.EXT]" are
                            created.
             -c <comp>, --compression=<comp>
-                           One of "none", "gz" or "bzip2" for the compression
+                           One of "none", "gz", "bzip2" or "xz" for the compression
                            to use on the image file, if any. Default is "none".
             -i             Build an incremental image (based on the "@final"
                            snapshot of the source image for the VM).
@@ -593,4 +593,4 @@ The following exit values are returned:
 
 ## SEE ALSO
 
-    vmadm(1m), zfs(1m)
+    vmadm(1M), zfs(1M)
